@@ -1,0 +1,68 @@
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+  }
+
+@media only screen and (min-width: 600px){
+    .masonry-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-gap: 16px;
+        margin: 16px;
+      }
+      
+      .masonry-item img {
+        width: 372px;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+      }
+      .masonry-item.tall {
+        grid-row: span 2; /* Span two rows for the tall image */
+      }
+  }
+  .tall{
+    grid-row: span 2; /* Span two rows for the tall image */
+  }
+  /* Skeleton Loader */
+.loading-skeleton {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 16px;
+  }
+  
+  .skeleton-item {
+    width: 372px;
+    background: #000;
+    height: 295px;
+    border-radius: 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  .skeleton-item.tall{
+    height: 600px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #ccc;
+    }
+    50% {
+      background-color: #000;
+    }
+    100% {
+      background-color: #ccc;
+    }
+  }

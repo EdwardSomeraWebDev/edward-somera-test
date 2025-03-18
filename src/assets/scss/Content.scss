@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.text-section{
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #fff;
+  text-align: left;
+
+  h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .call-out{
+    font-weight: 600;
+  }
+  p{
+    font-weight: 100;
+  }
+}
+.the-perfect-egg{
+  color: #cf1430;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+}

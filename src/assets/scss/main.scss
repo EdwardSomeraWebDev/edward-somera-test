@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #000;
+  }
+.main{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+
+    h2{
+        color: #fff;
+        font-size: 30px;
+        line-height: 33px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
+.container{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+hr.small{
+    max-width: 280px;
+}
+@media only screen and (min-width: 1280px) {
+    .main{
+        max-width: 1280px;
+    }
+    .container{
+        &__flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-flow: row;
+
+            &__left{
+                padding: 15px 15px;
+                width: 100%;
+            }
+            &__right{
+                padding: 15px 15px;
+                width: 100%;
+            }
+        }
+    }
+}
